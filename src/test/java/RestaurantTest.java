@@ -85,17 +85,5 @@ class RestaurantTest {
         assertEquals(restaurant.getOrderTotal(orderedItem), 388);
     }
 
-    @Test
-    public void selecting_item_from_menu_should_give_sum_of_price_707(){
-        restaurant.addToMenu("Sizzling brownie",319);
-        restaurant.displayDetails();
-        List<Item> items=restaurant.getMenu();
-        List<Item> orderedItem=new ArrayList<Item>();
-        orderedItem.add(items.get(0));
-        orderedItem.add(items.get(1));
-        orderedItem.add(items.get(2));
-        assertEquals(restaurant.getOrderTotal(orderedItem), 707);
-    }
-
     //<<<<<<<<<<<<<<<<<<<<<<<Order>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }
